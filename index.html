@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Wadhwa Official - Telegram Channel</title>
+
+
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1561684872326196');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1561684872326196&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0e17;
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* ===== STOCK MARKET BACKGROUND ===== */
+
+        .bg-anim {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: #0a0e17;
+        }
+
+        /* Dark grid */
+
+        .bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(44, 122, 232, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(44, 122, 232, 0.04) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        /* Candlestick chart canvas */
+
+        #chartCanvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.35;
+        }
+
+        /* Glowing orbs */
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.12;
+            animation: orbFloat 8s ease-in-out infinite;
+        }
+
+        .orb1 {
+            width: 400px;
+            height: 400px;
+            background: #2c7ae8;
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .orb2 {
+            width: 350px;
+            height: 350px;
+            background: #1a5a9a;
+            bottom: -80px;
+            right: -80px;
+            animation-delay: 3s;
+        }
+
+        .orb3 {
+            width: 250px;
+            height: 250px;
+            background: #4a90d9;
+            top: 40%;
+            left: 60%;
+            animation-delay: 5.5s;
+        }
+
+        @keyframes orbFloat {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-28px);
+            }
+        }
+
+        /* Floating stock icons */
+
+        .floating-icons {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .fi {
+            position: absolute;
+            opacity: 0;
+            animation: fiFloat linear infinite;
+        }
+
+        .fi svg {
+            display: block;
+        }
+
+        @keyframes fiFloat {
+            0% {
+                opacity: 0;
+                transform: translateY(110vh) rotate(0deg);
+            }
+            8% {
+                opacity: 1;
+            }
+            92% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-80px) rotate(360deg);
+            }
+        }
+
+        /* ===== MAIN WRAPPER ===== */
+
+        .wrapper {
+            position: relative;
+            z-index: 1;
+            max-width: 480px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+
+        /* ===== LOGO ===== */
+
+        .logo-wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 20px 16px;
+            animation: fadeDown 0.7s ease both;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-ring {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #131a25, #1f3a4d);
+            border: 2.5px solid rgba(44, 122, 232, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 0 30px rgba(44, 122, 232, 0.25);
+            animation: logoPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes logoPulse {
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(44, 122, 232, 0.25);
+            }
+            50% {
+                box-shadow: 0 0 45px rgba(44, 122, 232, 0.55);
+            }
+        }
+
+        .logo-ring::before {
+            content: '';
+            position: absolute;
+            inset: -9px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(44, 122, 232, 0.2);
+            animation: spin 6s linear infinite;
+        }
+
+        .logo-ring::after {
+            content: '';
+            position: absolute;
+            inset: -16px;
+            border-radius: 50%;
+            border: 1px dashed rgba(44, 122, 232, 0.1);
+            animation: spin 10s linear infinite reverse;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .logo-ring img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            clip-path: circle(50%);
+        }
+
+        .verified {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(44, 122, 232, 0.08);
+            border: 1px solid rgba(44, 122, 232, 0.25);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 11px;
+            color: #8bb8e8;
+            margin-top: 12px;
+            animation: fadeUp 0.7s 0.2s ease both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== HEADER ===== */
+
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 2px 20px 12px;
+            animation: fadeUp 0.7s 0.25s ease both;
+        }
+
+        .site-title {
+            font-size: clamp(22px, 6vw, 30px);
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 30%, #8bb8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .site-sub {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.35);
+            margin-top: 6px;
+            letter-spacing: 0.4px;
+        }
+
+        /* ===== MARQUEE ===== */
+
+        .mq-wrap {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(44, 122, 232, 0.1);
+            border-top: 1px solid rgba(44, 122, 232, 0.18);
+            border-bottom: 1px solid rgba(44, 122, 232, 0.18);
+            padding: 8px 0;
+            animation: fadeUp 0.7s 0.3s ease both;
+        }
+
+        .mq-track {
+            display: flex;
+            white-space: nowrap;
+            animation: mq 20s linear infinite;
+        }
+
+        .mq-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 24px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #8bb8e8;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .mq-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #2c7ae8;
+            flex-shrink: 0;
+        }
+
+        @keyframes mq {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ===== MARQUEE BUTTON ===== */
+
+        .mq-btn-wrap {
+            width: 100%;
+            padding: 10px 16px 0;
+        }
+
+        .mq-join-btn {
+            width: 100%;
+            padding: 13px 18px;
+            background: #2c7ae8;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            letter-spacing: 0.2px;
+            -webkit-appearance: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: btnGlow 2.5s ease-in-out infinite, outlineRipple 3s ease-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mq-join-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmerSlide 2s infinite;
+        }
+
+        .mq-join-btn:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 8px 35px rgba(44, 122, 232, 0.8), 0 0 60px rgba(44, 122, 232, 0.4);
+        }
+
+        @keyframes shimmerSlide {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* ===== FEATURES ===== */
+
+        .features {
+            width: 100%;
+            padding: 14px 16px 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            animation: fadeUp 0.7s 0.4s ease both;
+        }
+
+        .feat {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(44, 122, 232, 0.15);
+            border-radius: 14px;
+            padding: 11px 14px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: border-color 0.3s, background 0.3s, transform 0.2s;
+        }
+
+        .feat:hover {
+            border-color: rgba(44, 122, 232, 0.4);
+            background: rgba(44, 122, 232, 0.06);
+            transform: translateX(3px);
+        }
+
+        .feat-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 11px;
+            background: rgba(44, 122, 232, 0.12);
+            border: 1px solid rgba(44, 122, 232, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .feat h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+
+        .feat p {
+            font-size: 11.5px;
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 1.45;
+        }
+
+        /* ===== ACTION AREA ===== */
+
+        .action-wrap {
+            width: 100%;
+            padding: 12px 16px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            animation: fadeUp 0.7s 0.5s ease both;
+        }
+
+        /* Timer */
+
+        .timer-box {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1.5px solid rgba(44, 122, 232, 0.25);
+            border-radius: 16px;
+            padding: 14px 20px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .timer-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #2c7ae8, transparent);
+            animation: shimmer 2.5s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%,
+            100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .t-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+            letter-spacing: 0.5px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .t-label span {
+            display: block;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.25);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .t-num {
+            font-size: 42px;
+            font-weight: 800;
+            color: #2c7ae8;
+            letter-spacing: 4px;
+            font-variant-numeric: tabular-nums;
+            line-height: 1;
+            text-shadow: 0 0 24px rgba(44, 122, 232, 0.45);
+            transition: color 0.3s;
+        }
+
+        .t-num.urgent {
+            color: #ff6b6b;
+            text-shadow: 0 0 24px rgba(255, 107, 107, 0.5);
+            animation: urgentPulse 0.6s ease-in-out infinite;
+        }
+
+        @keyframes urgentPulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.65;
+            }
+        }
+
+        .t-bar-bg {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .t-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #1a5a9a, #2c7ae8);
+            border-radius: 3px;
+            transition: width 1s linear;
+        }
+
+        .t-redirect-msg {
+            font-size: 11px;
+            color: rgba(44, 122, 232, 0.7);
+            letter-spacing: 0.3px;
+        }
+
+        /* Main Join Button */
+
+        .join-btn {
+            width: 100%;
+            padding: 14px 18px;
+            background: #2c7ae8;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            letter-spacing: 0.2px;
+            -webkit-appearance: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: btnGlow 2.5s ease-in-out infinite, outlineRipple 3s ease-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .join-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmerSlide 2s infinite;
+        }
+
+        .join-btn:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 8px 35px rgba(44, 122, 232, 0.8), 0 0 60px rgba(44, 122, 232, 0.4);
+        }
+
+        @keyframes shimmerSlide {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* Members */
+
+        .members {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .dot-live {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2c7ae8;
+            animation: livePulse 2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes livePulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.35;
+            }
+        }
+
+        /* ===== DISCLAIMER ===== */
+
+        .disc {
+            width: 100%;
+            margin: 8px 0 4px;
+            padding: 0 16px;
+            animation: fadeUp 0.7s 0.6s ease both;
+        }
+
+        .disc-inner {
+            background: rgba(232, 168, 56, 0.05);
+            border: 1px solid rgba(232, 168, 56, 0.18);
+            border-left: 3px solid #e8a838;
+            border-radius: 10px;
+            padding: 13px 15px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.38);
+            line-height: 1.7;
+        }
+
+        .disc-inner strong {
+            color: #e8a838;
+        }
+
+        /* ===== FOOTER ===== */
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 20px 16px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.2);
+            animation: fadeUp 0.7s 0.7s ease both;
+        }
+
+        .footer a {
+            color: #5278c1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* ===== BUTTON GLOW ===== */
+
+        @keyframes btnGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 10px rgba(44, 122, 232, 0.5), 0 0 20px rgba(44, 122, 232, 0.3), 0 0 40px rgba(44, 122, 232, 0.15), inset 0 0 10px rgba(255, 255, 255, 0.1);
+                border: 2px solid rgba(44, 122, 232, 0.6);
+            }
+            25% {
+                box-shadow: 0 0 15px rgba(44, 122, 232, 0.7), 0 0 30px rgba(44, 122, 232, 0.5), 0 0 60px rgba(44, 122, 232, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.2);
+                border: 2px solid rgba(100, 180, 255, 0.9);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(44, 122, 232, 0.9), 0 0 50px rgba(44, 122, 232, 0.6), 0 0 80px rgba(44, 122, 232, 0.4), 0 0 120px rgba(44, 122, 232, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.3);
+                border: 2px solid rgba(150, 210, 255, 1);
+                transform: scale(1.02);
+            }
+            75% {
+                box-shadow: 0 0 15px rgba(44, 122, 232, 0.7), 0 0 30px rgba(44, 122, 232, 0.5), 0 0 60px rgba(44, 122, 232, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.2);
+                border: 2px solid rgba(100, 180, 255, 0.9);
+            }
+        }
+
+        /* ===== OUTLINE RIPPLE ===== */
+
+        @keyframes outlineRipple {
+            0% {
+                box-shadow: 0 0 0 0 rgba(44, 122, 232, 0.7), 0 0 0 0 rgba(44, 122, 232, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(44, 122, 232, 0), 0 0 0 30px rgba(44, 122, 232, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(44, 122, 232, 0), 0 0 0 0 rgba(44, 122, 232, 0);
+            }
+        }
+
+        /* ===== SHIMMER BORDER ===== */
+
+        @keyframes shimmerBorder {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ===== RESPONSIVE ===== */
+
+        @media(max-width:400px) {
+            .logo-ring {
+                width: 120px;
+                height: 120px;
+            }
+            .t-num {
+                font-size: 44px;
+            }
+            .join-btn {
+                font-size: 15px;
+                padding: 15px;
+            }
+            .feat {
+                padding: 13px 14px;
+            }
+        }
+    </style>
+    <base target="_blank">
+    <base target="_blank">
+    <base target="_blank">
+    <base target="_blank">
+    <link rel="me" href="https://www.blogger.com/profile/11455521734864455848" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+</head>
+
+<body>
+
+    <!-- ===== BACKGROUND ANIMATION ===== -->
+    <div class="bg-anim">
+        <div class="bg-grid"></div>
+        <canvas id="chartCanvas"></canvas>
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+        <div class="floating-icons" id="floatingIcons"></div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="wrapper">
+
+        <!-- Logo -->
+        <div class="logo-wrap">
+            <div class="logo-ring">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj76qvhm5h8zByWl8_zyILm3iWAhkVkWfLOMIDxTkgg8GaFaghmv1RvUsierltys17qYHYcTQ1CUKcZOK91qx-vg0gdlcOYxyE9mKgPcUc6vShFXo_FxUZYc81FD0vYZQ29ilANhF9pRgNVto6NVotZxva05v7D0_AppDpC5BUlTDJW4XCFp7joUXyendON/s447/unnamed.jpg">
+            </div>
+            <div class="verified">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="#8bb8e8"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Verified Channel
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="site-title">DEEPAK WADHWA OFFICIAL</div>
+            <div class="site-sub">Official Telegram Community Channel</div>
+        </div>
+
+        <!-- Marquee -->
+        <div class="mq-wrap">
+            <div class="mq-track">
+                <div class="mq-item"><span class="mq-dot"></span>LATEST UPDATE</div>
+                <div class="mq-item"><span class="mq-dot"></span>ACTIVE COMMUNITY</div>
+                <div class="mq-item"><span class="mq-dot"></span>FREE JOIN CHANNEL</div>
+                <div class="mq-item"><span class="mq-dot"></span>PRIVATE ACCESS</div>
+                <div class="mq-item"><span class="mq-dot"></span>TRUSTED PLATFORM</div>
+                <div class="mq-item"><span class="mq-dot"></span>INSTANT PAYOUT</div>
+                <div class="mq-item"><span class="mq-dot"></span>LATEST UPDATE</div>
+                <div class="mq-item"><span class="mq-dot"></span>ACTIVE COMMUNITY</div>
+                <div class="mq-item"><span class="mq-dot"></span>FREE JOIN CHANNEL</div>
+                <div class="mq-item"><span class="mq-dot"></span>PRIVATE ACCESS</div>
+                <div class="mq-item"><span class="mq-dot"></span>TRUSTED PLATFORM</div>
+                <div class="mq-item"><span class="mq-dot"></span>INSTANT PAYOUT</div>
+            </div>
+        </div>
+
+        <!-- Marquee Button -->
+        <div class="mq-btn-wrap">
+            <button class="mq-join-btn" onclick="handleJoin()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+      Join Telegram Channel
+    </button>
+        </div>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="feat">
+                <div class="feat-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="rgba(44,122,232,0.9)"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <div>
+                    <h3>Private Access</h3>
+                    <p>Exclusive content only for verified members with full channel access</p>
+                </div>
+            </div>
+            <div class="feat">
+                <div class="feat-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="rgba(44,122,232,0.9)"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                </div>
+                <div>
+                    <h3>Regular Content Update</h3>
+                    <p>Daily fresh predictions and updates — get them first, every time</p>
+                </div>
+            </div>
+            <div class="feat">
+                <div class="feat-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="rgba(44,122,232,0.9)"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                </div>
+                <div>
+                    <h3>Simple User Experience</h3>
+                    <p>Easy interface — join and start using instantly, no hassle</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Area -->
+        <div class="action-wrap">
+            <div class="timer-box">
+                <div class="t-label">
+                    Telegram pe automatically redirect ho rahe ho
+                    <span>Auto redirect in</span>
+                </div>
+                <div class="t-num" id="tNum">00:20</div>
+                <div class="t-bar-bg">
+                    <div class="t-bar" id="tBar" style="width:100%"></div>
+                </div>
+                <div class="t-redirect-msg" id="tMsg">⟶ Redirecting to Telegram channel...</div>
+            </div>
+
+            <button class="join-btn" onclick="handleJoin()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+      Join Telegram Channel
+    </button>
+
+            <div class="members"><span class="dot-live"></span><span>12,847 members &nbsp;•&nbsp; 3,241 online now</span></div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disc">
+            <div class="disc-inner">
+                <strong>⚠️ Disclaimer:</strong> All trading signals, predictions, and content shared in this community are for educational and informational purposes only. We are not SEBI-registered financial advisors. Trading in stocks, crypto, forex,
+                or any financial market involves substantial risk of loss. Past performance does not guarantee future results. Always do your own research before investing. Never trade with money you cannot afford to lose. We are not responsible for any
+                financial loss. Participate at your own risk.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Designed &amp; Developed by &nbsp;<a href="https://bharatx-website-agency.vercel.app/" target="_blank">BharatX Web Agency</a>
+        </div>
+    </div>
+
+    <script>
+        // ===== TELEGRAM LINK =====
+        var LINK = ' https://t.me/+S79ZuRXpH18yZjM1  ';
+
+        // ===== FLOATING ICONS =====
+        var icons = [
+            '<svg width="30" height="30" viewBox="0 0 24 24" fill="rgba(44,122,232,0.55)"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>',
+            '<svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(255,215,0,0.5)"><path d="M12 1v2.09c-3.48.5-6 2.77-6 5.66 0 3.07 2.5 4.93 6 5.88v5.36c-1.77-.3-3.13-1.27-3.94-2.65L5.5 18.93C6.68 20.84 8.84 22.1 12 22.29V23h1v-1.71c3.57-.49 6-2.77 6-5.79 0-3.16-2.45-4.97-6-5.89V4.58c1.54.27 2.76 1.13 3.54 2.36L18.2 5.7C17.06 3.86 15 2.67 13 2.45V1h-1zm0 3.58v5.05c-2-.73-3-1.8-3-3.07 0-1.3 1.14-2.3 3-2.98zm1 7.93c2.1.74 3 1.8 3 3.14 0 1.36-1.1 2.4-3 3.05v-6.19z"/></svg>',
+            '<svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(255,165,0,0.5)"><path d="M13.66 7H15V5h-5v2h1.62c.98 0 1.8.6 2.08 1.5H8v2h5.77c-.27.93-1.09 1.5-2.08 1.5H8v2l4.5 5h2.5l-4.5-5H11.69C13.14 13 14.45 12.18 14.87 11H15V9h-.13C14.72 8.15 14.26 7.44 13.66 7z"/></svg>',
+            '<svg width="30" height="30" viewBox="0 0 24 24" fill="rgba(44,122,232,0.45)"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(255,215,0,0.45)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+            '<svg width="28" height="28" viewBox="0 0 24 24" stroke="rgba(44,122,232,0.6)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="3.5,18.5 9.5,12.5 13.5,16.5 20.5,9"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(44,122,232,0.4)"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(255,200,0,0.5)"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm0 2h14v2H5v-2z"/></svg>',
+            '<svg width="24" height="24" viewBox="0 0 24 24" fill="rgba(255,220,50,0.5)"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(100,160,220,0.45)"><path d="M6 2l-6 7 12 13L24 9l-6-7H6zm-1.5 7L7 4h10l2.5 5H4.5zm7.5 10.5L3.5 10h17L12 19.5z"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(44,122,232,0.4)"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(44,122,232,0.4)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>',
+            '<svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(44,122,232,0.4)"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(44,122,232,0.4)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+            '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,200,0,0.5)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="9" fill="rgba(255,200,0,0.8)" font-weight="bold" stroke="none">₹</text></svg>',
+        ];
+
+        var fic = document.getElementById('floatingIcons');
+        for (var i = 0; i < 24; i++) {
+            var wrap = document.createElement('div');
+            wrap.className = 'fi';
+            wrap.innerHTML = icons[i % icons.length];
+            wrap.style.left = (Math.random() * 96) + '%';
+            wrap.style.bottom = '-60px';
+            wrap.style.animationDuration = (12 + Math.random() * 14) + 's';
+            wrap.style.animationDelay = (Math.random() * 16) + 's';
+            var sc = 0.8 + Math.random() * 1.2;
+            wrap.style.transform = 'scale(' + sc + ')';
+            fic.appendChild(wrap);
+        }
+
+        // ===== COUNTDOWN TIMER =====
+        var secs = 20,
+            total = 20;
+
+        function tick() {
+            if (secs < 0) return;
+            document.getElementById('tNum').textContent = '00:' + String(secs).padStart(2, '0');
+            document.getElementById('tBar').style.width = ((secs / total) * 100) + '%';
+            if (secs <= 5) document.getElementById('tNum').classList.add('urgent');
+            if (secs === 0) {
+                document.getElementById('tMsg').textContent = '✅ Redirecting now...';
+                setTimeout(function() {
+                    window.open(LINK, '_blank');
+                }, 400);
+            }
+            secs--;
+        }
+        tick();
+        setInterval(tick, 1000);
+
+        // ===== JOIN HANDLER =====
+        function handleJoin() {
+            window.open(LINK, '_blank');
+        }
+
+        // ===== STOCK MARKET CANVAS CHART =====
+        (function() {
+            var canvas = document.getElementById('chartCanvas');
+            var ctx = canvas.getContext('2d');
+            var w, h;
+
+            function resize() {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            // Candlestick data generator
+            var candles = [];
+            var candleWidth = 8;
+            var gap = 4;
+            var numCandles = Math.ceil(window.innerWidth / (candleWidth + gap)) + 10;
+            var price = 500;
+
+            for (var i = 0; i < numCandles; i++) {
+                var change = (Math.random() - 0.48) * 30;
+                var open = price;
+                var close = price + change;
+                var high = Math.max(open, close) + Math.random() * 15;
+                var low = Math.min(open, close) - Math.random() * 15;
+                candles.push({
+                    open: open,
+                    close: close,
+                    high: high,
+                    low: low
+                });
+                price = close;
+            }
+
+            var offset = 0;
+            var scrollSpeed = 0.4;
+
+            // Moving average line data
+            var maPoints = [];
+            for (var i = 0; i < numCandles; i++) {
+                maPoints.push(candles[i].close);
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, w, h);
+
+                // Find price range for scaling
+                var minP = Infinity,
+                    maxP = -Infinity;
+                for (var i = 0; i < candles.length; i++) {
+                    minP = Math.min(minP, candles[i].low);
+                    maxP = Math.max(maxP, candles[i].high);
+                }
+                var range = maxP - minP;
+                var padding = range * 0.3;
+                minP -= padding;
+                maxP += padding;
+                range = maxP - minP;
+
+                var chartH = h * 0.85;
+                var chartTop = h * 0.08;
+
+                function yScale(p) {
+                    return chartTop + chartH - ((p - minP) / range) * chartH;
+                }
+
+                // Draw horizontal grid lines (price levels)
+                ctx.strokeStyle = 'rgba(44,122,232,0.06)';
+                ctx.lineWidth = 1;
+                var gridCount = 8;
+                for (var g = 0; g <= gridCount; g++) {
+                    var gy = chartTop + (chartH / gridCount) * g;
+                    ctx.beginPath();
+                    ctx.moveTo(0, gy);
+                    ctx.lineTo(w, gy);
+                    ctx.stroke();
+                }
+
+                // Draw vertical time grid
+                for (var g = 0; g < w; g += 80) {
+                    ctx.beginPath();
+                    ctx.moveTo(g, chartTop);
+                    ctx.lineTo(g, chartTop + chartH);
+                    ctx.stroke();
+                }
+
+                // Draw candles
+                var totalCandleW = candleWidth + gap;
+                var startX = -offset;
+
+                for (var i = 0; i < candles.length; i++) {
+                    var cx = startX + i * totalCandleW;
+                    if (cx < -candleWidth - 20 || cx > w + 20) continue;
+
+                    var c = candles[i];
+                    var isGreen = c.close >= c.open;
+                    var color = isGreen ? '#2c7ae8' : '#ff4757';
+                    var bodyTop = yScale(Math.max(c.open, c.close));
+                    var bodyBottom = yScale(Math.min(c.open, c.close));
+                    var bodyH = Math.max(bodyBottom - bodyTop, 1);
+
+                    // Wick
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 1.2;
+                    ctx.globalAlpha = 0.5;
+                    ctx.beginPath();
+                    ctx.moveTo(cx + candleWidth / 2, yScale(c.high));
+                    ctx.lineTo(cx + candleWidth / 2, yScale(c.low));
+                    ctx.stroke();
+                    ctx.globalAlpha = 1;
+
+                    // Body
+                    ctx.fillStyle = color;
+                    ctx.globalAlpha = 0.35;
+                    ctx.fillRect(cx, bodyTop, candleWidth, bodyH);
+                    ctx.globalAlpha = 1;
+
+                    // Body border
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 1;
+                    ctx.globalAlpha = 0.6;
+                    ctx.strokeRect(cx, bodyTop, candleWidth, bodyH);
+                    ctx.globalAlpha = 1;
+                }
+
+                // Draw moving average line
+                ctx.strokeStyle = 'rgba(255,215,0,0.5)';
+                ctx.lineWidth = 2;
+                ctx.globalAlpha = 0.6;
+                ctx.beginPath();
+                var first = true;
+                for (var i = 0; i < maPoints.length; i++) {
+                    var mx = startX + i * totalCandleW + candleWidth / 2;
+                    var my = yScale(maPoints[i]);
+                    if (mx < -20 || mx > w + 20) continue;
+                    if (first) {
+                        ctx.moveTo(mx, my);
+                        first = false;
+                    } else {
+                        ctx.lineTo(mx, my);
+                    }
+                }
+                ctx.stroke();
+                ctx.globalAlpha = 1;
+
+                // Draw volume bars at bottom
+                var volH = h * 0.08;
+                var volY = h - volH - 5;
+                for (var i = 0; i < candles.length; i++) {
+                    var cx = startX + i * totalCandleW;
+                    if (cx < -candleWidth - 20 || cx > w + 20) continue;
+                    var c = candles[i];
+                    var isGreen = c.close >= c.open;
+                    var color = isGreen ? '#2c7ae8' : '#ff4757';
+                    var vol = Math.random() * volH * 0.8 + volH * 0.2;
+                    ctx.fillStyle = color;
+                    ctx.globalAlpha = 0.15;
+                    ctx.fillRect(cx, volY + volH - vol, candleWidth, vol);
+                    ctx.globalAlpha = 1;
+                }
+
+                // Scroll
+                offset += scrollSpeed;
+                if (offset >= totalCandleW) {
+                    offset -= totalCandleW;
+                    // Shift candles and add new one
+                    var lastClose = candles[candles.length - 1].close;
+                    var change = (Math.random() - 0.48) * 30;
+                    var newOpen = lastClose;
+                    var newClose = lastClose + change;
+                    var newHigh = Math.max(newOpen, newClose) + Math.random() * 15;
+                    var newLow = Math.min(newOpen, newClose) - Math.random() * 15;
+                    candles.shift();
+                    candles.push({
+                        open: newOpen,
+                        close: newClose,
+                        high: newHigh,
+                        low: newLow
+                    });
+                    maPoints.shift();
+                    maPoints.push(newClose);
+                }
+
+                requestAnimationFrame(draw);
+            }
+
+            draw();
+        })();
+    </script>
+</body>
+
+</html>
